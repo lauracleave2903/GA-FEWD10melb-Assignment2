@@ -1,7 +1,7 @@
 /*
 Project Name: Relaxr Website
 Client: Relaxr
-Author: Laura
+Author: Laura Cleave
 Developer @GA in Melbourne
 */
 
@@ -40,25 +40,26 @@ Developer @GA in Melbourne
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
+/*
+ * hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-body {
-    color: #000;
-    font-size: 12px;
-    line-height: 1.4;
-    font-family: Helvetica, Arial, sans-serif;
-}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
-/* Center the container */
+/* center the container */
 #container {
     width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /******************************************
@@ -72,73 +73,136 @@ header {
     height: 700px;
 }
 
-h1 {
+.logo-white {
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-weight: 800; 
     font-size: 47px; 
     color: #ffffff;
     padding: 20px 0 0 0;
-    border: 0 0 0 0;
+    border: 0;
     margin: 0 0 100px 120px;
 }
 
-h2 {
+.tagline {
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-weight: 600; 
     font-size: 47px; 
     color: #ffffff;
     text-align: center;
-    padding: 0 0 0 0;
-    border: 0 0 0 0;
+    padding: 0;
+    border: 0;
     margin: 0 0 80px 0;
 }
 
-h3 {
+#button-container1 {
+    margin: 0 auto;
+    width: 267px;
+}
+
+.button1 {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 600; 
+    font-size: 28px; 
+    color: #033048;
+    text-align: center;
+    background-color: #f9e42e;
+    width: 265px;
+    height: 60px; 
+    padding: 0;
+    border: 1px solid #f9e42e;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.section2 {
+    background: no-repeat center #efefee;
+    width: 1200px;
+    height: 615px; 
+}
+
+h2 {
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-weight: 600; 
     font-size: 40px; 
     color: #033048;
     padding: 100px 0 0 0;
-    border: 0 0 0 0;
+    border: 0;
     margin: 0 0 35px 120px;
 }
 
-h4 {
+p {
     font-family: 'Open Sans', Helvetica, sans-serif;
-    font-weight: 800; 
-    font-size: 47px; 
-    color: #ffffff;
-    padding: 70px 0 0 0;
-    border: 0 0 0 0;
-    margin: 0 0 50px 0;
+    font-weight: 300; 
+    font-size: 25px; 
+    color: #606161;
+    text-align: left;
+    padding: 0 490px 0 0;
+    border: 0;
+    margin: 0 0 60px 120px;
 }
 
-#section2 {
-    background: no-repeat center #efefee;
-    width: 1200px;
-    height: 615px; 
-    padding: 0 0 0 0;
-    border: 0 0 0 0;
-    margin: 0 0 0 0;
+ul {
+    list-style-position: inside;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 300; 
+    font-size: 25px; 
+    color: #606161;
+    text-align: left;
+    padding: 0 490px 0 0;
+    border: 0;
+    margin: 0 0 0 120px;
 }
 
-#section3 {
+.section3 {
     background: url(../images/testimonial_bg.jpg) no-repeat center;
     text-align: center; 
     width: 1200px; 
     height: 394px;
-    padding: 0;
-    border: 0;
-    margin: 0;
 }
 
-#section4 {
-    background-color: #f9e42e; 
+blockquote {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 35px; 
+    color: #ffffff;
+    text-align: center;
+    padding: 75px 0 0 0;
+    border: 0;
+    margin: 0 310px 0 310px;
+}
+
+.blockquote-name {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.section4 {
+    background-color: #f9e42e;
+    text-align: center; 
     width: 1200px;
     height: 120px;
+}
+
+.button-container2 {
+    margin: 0 auto;
+    width: 307px;
+}
+
+.button2 {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 600; 
+    font-size: 25px; 
+    color: #ffffff;
+    text-align: center;
+    background-color: #033048;
+    width: 305px;
+    height: 60px; 
     padding: 0;
-    border: 0;
-    margin: 0;
+    border: 1px solid #033048;
+    margin: 30px 0 30px 0;
+    border-radius: 5px;
 }
 
 footer {
@@ -151,84 +215,23 @@ footer {
     margin: 0;
 }
 
-.button1 {
+.logo-yellow {
     font-family: 'Open Sans', Helvetica, sans-serif;
-    font-weight: 600; 
-    font-size: 28px; 
-    color: #033048;
-    text-align: center;
-    background-color: #f9e42e;
-    width: 265px;
-    height: 60px; 
-    padding: 0 0 0 0;
-    border: 1px solid #f9e42e;
-    margin: 0 0 0 0;
-    border-radius: 5px;
+    font-weight: 800; 
+    font-size: 47px; 
+    color: #f9e42e;
+    padding: 70px 0 0 0;
+    border: 0;
+    margin: 0 0 50px 0;
 }
 
-.button2 {
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    font-weight: 600; 
-    font-size: 25px; 
-    color: #ffffff;
-    text-align: center;
-    background-color: #033048;
-    width: 305px;
-    height: 60px; 
-    padding: 0 0 0 0;
-    border: 1px solid #033048;
-    margin: 30px 0 30px 0;
-    border-radius: 5px;
-}
-
-p {
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    font-weight: 300; 
-    font-size: 25px; 
-    color: #606161;
-    text-align: left;
-    padding: 0 490px 0 0;
-    border: 0 0 0 0;
-    margin: 0 0 60px 120px;
-}
-
-ul {
-    list-style-position: inside;
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    font-weight: 300; 
-    font-size: 25px; 
-    color: #606161;
-    text-align: left;
-    padding: 0 490px 0 0;
-    border: 0 0 0 0;
-    margin: 0 0 0 120px;
-}
-
-blockquote {
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 35px; 
-    color: #ffffff;
-    text-align: center;
-    padding: 75px 0 0 0;
-    border: 0 0 0 0;
-    margin: 0 310px 0 310px;
-}
-
-#quote-name {
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-#sub-copy {
+.footer-subcopy {
     font-family: 'Open Sans', Helvetica, sans-serif;
     font-weight: 300; 
     font-size: 18px; 
     color: #ffffff;
     text-align: center;
-    padding: 0 0 0 0;
-    border: 0 0 0 0;
+    padding: 0;
+    border: 0;
     margin: 50px 0 0 0;
 }
